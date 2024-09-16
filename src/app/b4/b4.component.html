@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 mt-5">
+      <div class="card">
+        <div class="card-header text-center text-primary">
+          <h3>Xuat mang mot chieu ngau nhien.</h3>
+        </div>
+        <div class="card-body">
+          <input type="number" class="form-control" [(ngModel)]="a">
+          <button type="button" (click)="ngauNhien()">Ngau nhien</button>
+        </div>
+        <div class="card-footer text-muted">
+          <p>Mang ngau nhien:
+          @for (item of Array; track $index) {
+            {{item}}
+          }
+        </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
